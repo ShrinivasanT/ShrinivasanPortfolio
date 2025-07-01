@@ -104,7 +104,7 @@ export function DraftForm() {
 
           <div className="flex justify-end pt-3">
             <Button
-              className="rounded-lg hover:bg-blue-600 "
+              className="rounded-lg hover:bg-blue-600 dark:hover:text-white"
               size="sm"
               type="submit"
             >
