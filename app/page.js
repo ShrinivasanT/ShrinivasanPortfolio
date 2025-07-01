@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import { NavigationMenu } from "./comps/navbar";
 import Hero from "./comps/Hero";
 import Skills from "./comps/Skills";
@@ -23,10 +22,10 @@ export default function Home() {
       <Certificates />
       <Separator className="my-4" />
 
-      <Projects />
+      <Projects id="projects" />
       <Separator className="my-4" />
 
-      <Education />
+      <Education id="education" />
       <DraftForm />
       <Footer />
     </div>

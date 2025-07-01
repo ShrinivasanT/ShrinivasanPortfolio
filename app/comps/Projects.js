@@ -26,21 +26,21 @@ const projects = [
     tags: ["Python", "Scikit-learn", "Pandas"],
   },
   {
-    title: "Cancer Detection Model",
-    desc: "Detects cancerous patterns from image data using deep learning.",
+    title: "Alzheimers Prediction CNN",
+    desc: "Detects Alzheimer's disease patterns from image data using deep learning.",
     link: "https://github.com/ShrinivasanT/Cancer-Detection",
     tags: ["CNN", "Deep Learning", "Keras"],
   },
   {
-    title: "Mental Health Visualization",
-    desc: "Tableau dashboard for mental health trends and insights.",
+    title: "COVID-19 Dashboard",
+    desc: "Tableau dashboard for COVID-19 trends and insights.",
     link: "https://public.tableau.com/shared/4ZG52ZHSB?:display_count=n&:origin=viz_share_link",
     tags: ["Tableau", "Visualization", "Mental Health"],
   },
   {
-    title: "Mental Health Visualization",
-    desc: "Tableau dashboard for mental health trends and insights.",
-    link: "https://public.tableau.com/shared/4ZG52ZHSB?:display_count=n&:origin=viz_share_link",
+    title: "NN using MINST dataset",
+    desc: "Neural network project analyzing the MNIST dataset for image classification .",
+    link: "/under-development",
     tags: ["Tableau", "Visualization", "Mental Health"],
   },
 ];
@@ -59,15 +59,15 @@ const ProjectCard = ({ title, desc, link, tags }) => (
         </Badge>
       ))}
     </div>
-    <Button
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      variant="outline"
-      className="mt-2 font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600  "
-    >
-      View Project →
-    </Button>
+    <a href={link} target="_blank" className="mt-2 w-full  ">
+      <Button
+        rel="noopener noreferrer"
+        variant="outline"
+        className="w-full font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600"
+      >
+        View Project →
+      </Button>
+    </a>
   </Card>
 );
 

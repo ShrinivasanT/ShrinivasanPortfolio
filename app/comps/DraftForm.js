@@ -39,15 +39,15 @@ export function DraftForm() {
   );
 
   return (
-    <div className="w-full md:p-18">
+    <div id="contact" className="w-full md:p-18">
       <Form {...form}>
         <form
           action={action}
           className="flex flex-col p-4 md:p-6 w-full  mx-auto max-w-6xl rounded-md  gap-4 border"
         >
-          <h2 className="text-2xl font-bold">Contact us</h2>
+          <h2 className="text-2xl font-bold">Lets Connect . . .</h2>
           <p className="text-base text-muted-foreground">
-            Please fill the form below to contact us
+            Please fill the form below to contact me
           </p>
 
           <div className="flex items-center justify-between flex-wrap sm:flex-nowrap gap-4">

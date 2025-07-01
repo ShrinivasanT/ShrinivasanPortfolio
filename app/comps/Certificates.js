@@ -9,27 +9,27 @@ const certificates = [
   {
     title: "Artificial Intelligence Fundamentals - IBM",
     image: "/Certificates/aiibm.png",
-    link: "/Certificates/ml.pdf",
+    link: "/Certificates/AI Fundamentald IBM.pdf",
   },
   {
     title: "Getting Started with Data - IBM",
     image: "/Certificates/Getting_20Started_20With_20Data_20Badge.png",
-    link: "/Certificates/ds.pdf",
+    link: "/Certificates/Getting Started with Data.pdf",
   },
   {
     title: "Enterprise Data Science in Practice - IBM",
     image: "/Certificates/image.png",
-    link: "/Certificates/aws.pdf",
+    link: "/Certificates/Getting_Started_with_Enterprise_grade_AI.pdf",
   },
   {
     title: "Delloite Virtual Internship",
     image: "/Certificates/ss2.png",
-    link: "/Certificates/sql.pdf",
+    link: "/Certificates/Delloite Certification.pdf",
   },
   {
     title: "Fundamentals of Machine Learning and Artificial Intelligence",
     image: "/Certificates/aws.png",
-    link: "/Certificates/frontend.pdf",
+    link: "/Certificates/Shri AWS.pdf",
   },
 ];
 
@@ -60,7 +60,10 @@ const CertificateCard = ({ title, image, link }) => (
 
 export default function Certificates() {
   return (
-    <div className="w-full px-4 py-20 bg-background text-foreground">
+    <div
+      id="certificates"
+      className="w-full px-4 py-20 bg-background text-foreground"
+    >
       <div className="mb-16 mx-auto flex justify-center items-center w-fit animate-in fade-in slide-in-from-bottom-5 duration-1000">
         <TitleWithUnderline as="h1">Certificates</TitleWithUnderline>
       </div>

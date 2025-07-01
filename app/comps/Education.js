@@ -14,24 +14,24 @@ const educationData = [
     id: "item-1",
     title: "Bachelor of Engineering - Computer Science",
     content:
-      "RMD Sinhgad School of Engineering, Pune\nGraduated: 2025\nCGPA: 8.6\nRelevant Courses: Data Science, Machine Learning, Cloud Computing",
+      "RMD Sinhgad School of Engineering, Pune\nGraduated: 2025\nCGPA: 7.63\nRelevant Courses: Data Science, Machine Learning.",
   },
   {
     id: "item-2",
     title: "HSC - Maharashtra State Board",
     content:
-      "Percentage: 85.3%\nSubjects: Physics, Chemistry, Math, Computer Science",
+      "Abasaheb Garware College \nPercentage: 64.67%\nSubjects: Physics, Chemistry, Math, Electronics",
   },
   {
     id: "item-3",
     title: "SSC - Maharashtra State Board",
-    content: "Percentage: 92.0%\nSchool: VPM’s Vidya Bhavan High School",
+    content: "Percentage: 87.0%\nSchool: Versatile High School",
   },
   {
     id: "item-4",
-    title: "Extracurricular - Technical Lead @ CodeCell",
+    title: "Extracurricular Activities",
     content:
-      "Organized and mentored coding bootcamps, developed full-stack projects, participated in hackathons and represented the college at intercollegiate events.",
+      "Tech Team Member at ACES \nTraining & Placement Coordinator \nBadminton & GYM  ",
   },
 ];
 

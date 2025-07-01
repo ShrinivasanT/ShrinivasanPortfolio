@@ -5,7 +5,7 @@ import SpotlightHeading from "./Spotlight";
 const Hero = () => {
   return (
     <section
-      id="hero"
+      id="home"
       className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 "
     >
       <img
@@ -22,7 +22,7 @@ const Hero = () => {
         Aspiring Data Scientist | ML Enthusiast
       </p>
       <a
-        href="/Shrinivasan resume (2).pdf "
+        href="/Shrinivasan_Resume.pdf "
         download
         className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition"
       >
