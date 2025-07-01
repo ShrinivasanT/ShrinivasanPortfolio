@@ -103,7 +103,11 @@ export function DraftForm() {
           />
 
           <div className="flex justify-end pt-3">
-            <Button className="rounded-lg" size="sm" type="submit">
+            <Button
+              className="rounded-lg hover:bg-blue-600 "
+              size="sm"
+              type="submit"
+            >
               {isPending ? "Submitting..." : "Submit"}
             </Button>
           </div>
