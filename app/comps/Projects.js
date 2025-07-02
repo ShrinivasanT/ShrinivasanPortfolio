@@ -11,13 +11,13 @@ const projects = [
     title: "Mental Health Analysis on Twitter",
     desc: "Conducted sentiment and mental health analysis using Kaggle datasets and Twitter API.",
     link: "https://mentalhealthtwitter.streamlit.app/",
-    tags: ["Streamlit", "Python", "NLP", "Kaggle"],
+    tags: ["Streamlit", "Python", "Vader", "Kaggle"],
   },
   {
     title: "Artsy Duck Website",
-    desc: "An ML-powered site that classifies tweet sentiment visually.",
+    desc: "E-Commerce Website for a handicrafts store, located in Pune, Kothrud.",
     link: "https://artsyduck.vercel.app/",
-    tags: ["React", "Vercel", "ML", "Tailwind"],
+    tags: ["React", "Vercel", "Next.js", "Tailwind"],
   },
   {
     title: "Supplement Sales Prediction",
@@ -35,13 +35,13 @@ const projects = [
     title: "COVID-19 Dashboard",
     desc: "Tableau dashboard for COVID-19 trends and insights.",
     link: "https://public.tableau.com/shared/4ZG52ZHSB?:display_count=n&:origin=viz_share_link",
-    tags: ["Tableau", "Visualization", "Mental Health"],
+    tags: ["Tableau", "Visualization", "Kaggle"],
   },
   {
     title: "NN using MINST dataset",
     desc: "Neural network project analyzing the MNIST dataset for image classification .",
     link: "/under-development",
-    tags: ["Tableau", "Visualization", "Mental Health"],
+    tags: ["Python", "Numpy"],
   },
 ];
 

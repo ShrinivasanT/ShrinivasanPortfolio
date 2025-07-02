@@ -14,7 +14,7 @@ const educationData = [
     id: "item-1",
     title: "Bachelor of Engineering - Computer Science",
     content:
-      "RMD Sinhgad School of Engineering, Pune\nGraduated: 2025\nCGPA: 7.63\nRelevant Courses: Data Science, Machine Learning.",
+      "RMD Sinhgad School of Engineering, Pune\nGraduated: 2025\nCGPA: 7.9\nRelevant Courses: Data Science, Machine Learning.",
   },
   {
     id: "item-2",

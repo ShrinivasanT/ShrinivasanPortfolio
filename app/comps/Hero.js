@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <SpotlightHeading />
       <p className="text-lg sm:text-xl text-center text-gray-700 dark:text-muted-foreground mb-2 animate-in fade-in slide-in-from-bottom-5 duration-1000">
-        Im Shrinivasan
+        I&apos;m Shrinivasan
       </p>
 
       <p className="text-lg sm:text-xl text-gray-700 dark:text-muted-foreground mb-6 animate-in fade-in slide-in-from-bottom-5 duration-1000">
