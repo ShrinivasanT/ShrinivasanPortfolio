@@ -8,7 +8,7 @@ import TitleWithUnderline from "./Scrolleffect";
 
 const skills = {
   Languages: ["Python", "JavaScript", "SQL", "C++"],
-  Tools: ["Git", "Tableau", "Supabase", "VS Code", "Postman"],
+  Tools: ["Git", "Tableau", "Supabase", "VS Code", "Kaggle"],
   Libraries: ["React", "Tailwind CSS", "Pandas", "NumPy", "scikit-learn"],
 };
 
