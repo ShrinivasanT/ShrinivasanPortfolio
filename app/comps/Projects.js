@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Alzheimers Prediction CNN",
     desc: "Detects Alzheimer's disease patterns from image data using deep learning.",
-    link: "https://github.com/ShrinivasanT/Cancer-Detection",
+    link: "/under-development",
     tags: ["CNN", "Deep Learning", "Keras"],
   },
   {
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "NN using MINST dataset",
     desc: "Neural network project analyzing the MNIST dataset for image classification .",
-    link: "/under-development",
+    link: "https://github.com/ShrinivasanT/NN-from-Scratch-using-MNIST",
     tags: ["Python", "Numpy"],
   },
 ];
