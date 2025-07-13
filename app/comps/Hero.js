@@ -22,7 +22,7 @@ const Hero = () => {
         Aspiring Data Scientist | ML Enthusiast
       </p>
       <a
-        href="/Shrinivasan_Resume.pdf "
+        href="/ShriResume.pdf "
         download
         className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition"
       >
