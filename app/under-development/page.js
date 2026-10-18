@@ -2,7 +2,6 @@
 
 import { Construction } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function UnderDevelopment() {
   return (
@@ -14,11 +13,13 @@ export default function UnderDevelopment() {
       <p className="text-lg text-center max-w-xl mb-8">
         We&apos;re still working on this project. Please check back later!
       </p>
-      <Link href="/">
+      {/* Full reload so this page's Tailwind styles don't carry over to the home page */}
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+      <a href="/">
         <Button className="px-6 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
           Back to Home
         </Button>
-      </Link>
+      </a>
     </div>
   );
 }
