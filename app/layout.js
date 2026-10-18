@@ -9,6 +9,8 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  // Shrink the page when the phone keyboard opens, so the chat box stays above it.
+  interactiveWidget: "resizes-content",
 };
 
 // Applies the saved light/dark choice before first paint.

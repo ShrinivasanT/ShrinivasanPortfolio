@@ -121,7 +121,8 @@ svg {
 
 .app {
   display: flex;
-  height: 100%
+  /* --app-h follows the visible area when a phone keyboard opens (set in ChatApp) */
+  height: var(--app-h, 100%)
 }
 
 /* ---------- Sidebar ---------- */

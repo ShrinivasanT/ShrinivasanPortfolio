@@ -147,12 +147,30 @@ export default function ChatApp() {
     sync();
     addEventListener("resize", sync);
 
+    /* phone keyboard: fit the app to the visible area and keep the latest message in view */
+    const vv = window.visualViewport;
+    const fit = () => {
+      const root = document.documentElement;
+      const covered = innerHeight - vv.height > 1;
+      if (covered) root.style.setProperty("--app-h", `calc(${vv.height}px - env(safe-area-inset-top, 0px))`);
+      else root.style.removeProperty("--app-h");
+      if (covered) window.scrollTo(0, 0);
+      if (document.activeElement === inputRef.current) {
+        const s = scroller.current;
+        s.scrollTo({ top: s.scrollHeight, behavior: "auto" });
+      }
+    };
+    vv?.addEventListener("resize", fit);
+
     /* deep links: #projects, #skills, ... */
     const hk = location.hash.slice(1);
     const hs = SECTIONS.find((s) => s.key === hk);
     if (hs) setTimeout(() => ask(hs.prompt, { intent: hs.key }), 0);
 
-    return () => removeEventListener("resize", sync);
+    return () => {
+      removeEventListener("resize", sync);
+      vv?.removeEventListener("resize", fit);
+    };
   }, [ask]);
 
   const appClass = ["app", chatting && "chatting", collapsed && "collapsed", open && "open"].filter(Boolean).join(" ");
