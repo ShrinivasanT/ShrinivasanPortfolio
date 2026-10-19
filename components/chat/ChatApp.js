@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 import Composer from "./Composer";
 import { BotMessage, UserMessage } from "./Message";
 import { I } from "./Icons";
-import Intro from "./Intro";
+import { useTheme } from "../useTheme";
 
 const MOBILE = "(max-width:860px)";
 
@@ -32,10 +32,9 @@ export default function ChatApp() {
   const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [dark, setDark] = useState(false);
   const [greet, setGreet] = useState("Hi, I'm Shri.");
   const [toastState, setToastState] = useState({ msg: "", show: false });
-  const [intro, setIntro] = useState(true);
+  const [dark, toggleTheme] = useTheme();
 
   const busy = useRef(false);
   const historyRef = useRef([]);
@@ -118,25 +117,8 @@ export default function ChatApp() {
     inputRef.current?.focus();
   };
 
-  /* theme */
-  const isDark = () => {
-    const root = document.documentElement;
-    return root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-  };
-  const toggleTheme = () => {
-    const root = document.documentElement;
-    root.dataset.theme = isDark() ? "light" : "dark";
-    try { localStorage.setItem("shri-theme", root.dataset.theme); } catch {}
-    setDark(isDark());
-  };
-
   useEffect(() => {
     reduce.current = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setDark(isDark());
-
-    /* intro plays once per browser session */
-    if (reduce.current || document.documentElement.dataset.introSeen !== undefined) setIntro(false);
-    else try { sessionStorage.setItem("shri-intro", "1"); } catch {}
 
     /* greeting by time */
     const h = new Date().getHours();
@@ -206,7 +188,7 @@ export default function ChatApp() {
           </div>
 
           <section className="hero">
-<h1><span className="brand-mark">S</span><span>{greet}</span></h1>
+            <h1><span className="brand-mark">S</span><span>{greet}</span></h1>
             <p>This portfolio works like a chat. Ask about my projects, skills or background, or pick a section from the sidebar. Every answer is an interactive panel.</p>
           </section>
 
@@ -225,7 +207,6 @@ export default function ChatApp() {
           <Composer inputRef={inputRef} mobile={mobile} onAsk={(v) => ask(v, null, true)} onSection={(s) => ask(s.prompt, { intent: s.key })} />
         </main>
       </div>
-      {intro ? <Intro onDone={() => setIntro(false)} /> : null}
       <div className={`toast${toastState.show ? " show" : ""}`} role="status">{toastState.msg}</div>
     </>
   );

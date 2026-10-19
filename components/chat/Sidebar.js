@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { I } from "./Icons";
 import { SECTIONS } from "./engine";
 import { P } from "@/data/portfolio";
@@ -6,7 +7,7 @@ export default function Sidebar({ active, history, dark, onSection, onRecent, on
   return (
     <aside className="side" id="side" aria-label="Portfolio sections">
       <div className="side-top">
-        <div className="brand"><span className="brand-mark">S</span>shri.ai</div>
+        <Link className="brand" href="/" title="Back to portfolio"><span className="brand-mark">S</span>shri.ai</Link>
         <button className="icon-btn" aria-label="Close sidebar" onClick={onCollapse}>{I.panel}</button>
       </div>
       <button className="new-chat" onClick={onNewChat}>{I.plus}New chat</button>

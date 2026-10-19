@@ -18,5 +18,6 @@ export const I = {
   chart: <svg width="17" height="17" viewBox="0 0 24 24" {...S} strokeWidth="1.8"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></svg>,
   chev: <svg width="14" height="14" viewBox="0 0 24 24" {...S} strokeWidth="2"><path d="m6 9 6 6 6-6" /></svg>,
   copy: <svg width="15" height="15" viewBox="0 0 24 24" {...S} strokeWidth="1.8"><rect x="9" y="9" width="12" height="12" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h8" /></svg>,
+  chat: <svg width="16" height="16" viewBox="0 0 24 24" {...S} strokeWidth="1.8"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z" /></svg>,
   ext: <svg width="14" height="14" viewBox="0 0 24 24" {...S} strokeWidth="2"><path d="M14 4h6v6M20 4 10 14M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" /></svg>,
 };
